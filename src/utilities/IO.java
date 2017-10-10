@@ -6,11 +6,21 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.sql.Connection;
+import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class IO {
+    
+    
+    
+    public static Connection getDbConn(String dbName) throws Exception {
+        String dbConnStrg = "jdbc:mysql://localhost/" + dbName + "?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8";
+        Connection conn = DriverManager.getConnection(dbConnStrg, "root", "");
+        return conn;
+    }
     
     
     
