@@ -16,9 +16,7 @@ public class Espeon {
      */
     public static void main(String[] args) {
         
-        System.out.println("the first line. v2");
-        System.out.println("the secound line. v2");
-        System.out.println("the third line. v2");
+        System.out.println("edit made upstream.");
     }
     
 }
